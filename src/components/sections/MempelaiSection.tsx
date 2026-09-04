@@ -43,6 +43,7 @@ function MempelaiCard({
           src={photo}
           alt={name}
           fill
+          sizes="(max-width: 768px) 176px, 208px"
           className="object-cover object-top rounded-sm"
         />
         <div className="absolute inset-0 bg-gradient-to-t from-darkwine/40 via-transparent to-transparent rounded-sm z-10" />

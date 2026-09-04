@@ -9,7 +9,7 @@ export const weddingData = {
     nickname: "Sigit",
     instagram: "@sigit.sptr",
     parents: "Putra dari Bapak H. Suharto & Ibu Hj. Siti Rahayu",
-    photo: "/images/groom.jpg",
+    photo: "/images/groom.png",
   },
 
   bride: {
@@ -17,10 +17,10 @@ export const weddingData = {
     nickname: "Wike",
     instagram: "@wike.wulandari",
     parents: "Putri dari Bapak H. Bambang Sudarsono & Ibu Hj. Endah Lestari",
-    photo: "/images/bride.jpg",
+    photo: "/images/bride.png",
   },
 
-  couplePhoto: "/images/couple.jpg",
+  couplePhoto: "/images/couple.png",
 
   event: {
     date: "2026-09-24", // YYYY-MM-DD
@@ -96,12 +96,10 @@ export const weddingData = {
   ],
 
   gallery: [
-    { src: "/images/gallery/g1.jpg", alt: "Foto bersama di taman" },
-    { src: "/images/gallery/g2.jpg", alt: "Foto prewedding outdoor" },
-    { src: "/images/gallery/g3.jpg", alt: "Momen spesial bersama" },
-    { src: "/images/gallery/g4.jpg", alt: "Foto kebersamaan" },
-    { src: "/images/gallery/g5.jpg", alt: "Prewedding indoor" },
-    { src: "/images/gallery/g6.jpg", alt: "Kenangan indah" },
+    { src: "/images/couple.png", alt: "Pasangan Mempelai Berdiri" },
+    { src: "/images/groom.png", alt: "Mempelai Pria" },
+    { src: "/images/bride.png", alt: "Mempelai Wanita" },
+    { src: "/images/og-image.png", alt: "Pasangan Mempelai Duduk" },
   ],
 
   music: {
@@ -116,7 +114,7 @@ export const weddingData = {
     title: "Sigit & Wike — Undangan Pernikahan",
     description:
       "Undangan pernikahan Sigit & Wike. Minggu, 24 September 2026 di Gedung Serba Guna Harmoni, Bandung.",
-    ogImage: "/images/og-image.jpg",
+    ogImage: "/images/og-image.png",
     url: "https://undangan-irfan-meysa.vercel.app",
   },
 };

@@ -68,6 +68,7 @@ export default function OpeningCover({ onOpen }: OpeningCoverProps) {
             src={weddingData.couplePhoto}
             alt="Sigit & Wike"
             fill
+            sizes="(max-width: 768px) 192px, 224px"
             className="object-cover object-top rounded-sm"
             priority
           />

@@ -87,6 +87,7 @@ export default function HeroSection() {
             src={weddingData.couplePhoto}
             alt={`${weddingData.groom.nickname} & ${weddingData.bride.nickname}`}
             fill
+            sizes="(max-width: 768px) 256px, 320px"
             className="object-cover object-top rounded-sm"
           />
           <div className="absolute inset-0 bg-gradient-to-t from-darkwine/50 via-transparent to-transparent rounded-sm" />
