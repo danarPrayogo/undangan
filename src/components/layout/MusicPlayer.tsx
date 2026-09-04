@@ -37,7 +37,7 @@ export default function MusicPlayer() {
   return (
     <>
       <audio ref={audioRef} src={weddingData.music.src} preload="auto" autoPlay loop />
-      <div className="fixed bottom-6 right-6 z-40">
+      <div className="fixed bottom-20 right-4 md:bottom-8 md:right-6 z-40">
         <button
           id="btn-play-music"
           onClick={togglePlay}
