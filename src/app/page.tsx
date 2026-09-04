@@ -80,9 +80,9 @@ export default function Home() {
               <GiftSection />
               <ClosingSection />
             </main>
-            <MusicPlayer />
           </>
         )}
+        <MusicPlayer shouldPlay={isOpen} />
       </div>
     </>
   );

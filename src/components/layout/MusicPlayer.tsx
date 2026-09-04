@@ -1,10 +1,14 @@
 "use client";
 
 import { useState, useRef, useEffect } from "react";
-import { Disc, VolumeX, Volume2 } from "lucide-react";
+import { Disc, VolumeX } from "lucide-react";
 import { weddingData } from "@/data/wedding";
 
-export default function MusicPlayer() {
+interface MusicPlayerProps {
+  shouldPlay?: boolean;
+}
+
+export default function MusicPlayer({ shouldPlay = true }: MusicPlayerProps) {
   const audioRef = useRef<HTMLAudioElement>(null);
   const [isPlaying, setIsPlaying] = useState(false);
 
@@ -14,14 +18,15 @@ export default function MusicPlayer() {
     audio.volume = 0.5;
     audio.loop = true;
 
-    // Auto play when component mounts (invitation opened)
-    const playPromise = audio.play();
-    if (playPromise !== undefined) {
-      playPromise
-        .then(() => setIsPlaying(true))
-        .catch(() => setIsPlaying(false));
+    if (shouldPlay) {
+      const playPromise = audio.play();
+      if (playPromise !== undefined) {
+        playPromise
+          .then(() => setIsPlaying(true))
+          .catch(() => setIsPlaying(false));
+      }
     }
-  }, []);
+  }, [shouldPlay, weddingData.music.src]);
 
   const togglePlay = () => {
     const audio = audioRef.current;
@@ -30,13 +35,22 @@ export default function MusicPlayer() {
       audio.pause();
       setIsPlaying(false);
     } else {
-      audio.play().then(() => setIsPlaying(true)).catch(() => {});
+      audio
+        .play()
+        .then(() => setIsPlaying(true))
+        .catch(() => {});
     }
   };
 
   return (
     <>
-      <audio ref={audioRef} src={weddingData.music.src} preload="auto" autoPlay loop />
+      <audio
+        key={weddingData.music.src}
+        ref={audioRef}
+        src={weddingData.music.src}
+        preload="auto"
+        loop
+      />
       <div className="fixed bottom-20 right-4 md:bottom-8 md:right-6 z-40">
         <button
           id="btn-play-music"
@@ -52,7 +66,10 @@ export default function MusicPlayer() {
             <span className="absolute inset-0 rounded-full border border-gold/40 animate-ping opacity-30 pointer-events-none" />
           )}
           {isPlaying ? (
-            <Disc className="w-5 h-5 text-gold animate-spin" style={{ animationDuration: "4s" }} />
+            <Disc
+              className="w-5 h-5 text-gold animate-spin"
+              style={{ animationDuration: "4s" }}
+            />
           ) : (
             <VolumeX className="w-5 h-5" />
           )}

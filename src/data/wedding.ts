@@ -105,7 +105,7 @@ export const weddingData = {
   ],
 
   music: {
-    src: "/music/bgm.mp3",
+    src: "/music/musicfix.webm",
     title: "Lagu Tema",
   },
 
