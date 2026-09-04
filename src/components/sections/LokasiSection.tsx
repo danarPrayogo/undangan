@@ -66,9 +66,9 @@ export default function LokasiSection() {
               href={weddingData.event.mapsUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className="group flex items-center justify-center gap-2 w-full py-3 border border-gold/50 text-gold font-montserrat text-xs tracking-[0.2em] uppercase relative overflow-hidden transition-all duration-300 hover:text-darkwine"
+              className="group flex items-center justify-center gap-2 w-full py-3 border border-gold/50 text-gold font-montserrat text-xs tracking-[0.2em] uppercase relative overflow-hidden transition-all duration-300 hover:border-gold/80 hover:shadow-[0_0_0_1px_rgba(201,164,92,0.16),0_0_14px_rgba(201,164,92,0.10)]"
             >
-              <span className="absolute inset-0 bg-gold transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left" />
+              <span className="absolute inset-0 bg-gold/12 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left pointer-events-none" />
               <Map size={14} className="relative z-10" />
               <span className="relative z-10">BUKA GOOGLE MAPS</span>
             </a>

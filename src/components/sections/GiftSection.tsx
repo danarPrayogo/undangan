@@ -40,7 +40,7 @@ export default function GiftSection() {
             <button
               id="btn-show-address"
               onClick={() => setShowAddress(!showAddress)}
-              className="group flex items-center justify-center gap-2 w-full py-2.5 border border-gold/40 text-gold font-montserrat text-[10px] tracking-[0.2em] uppercase transition-all duration-300 hover:border-gold hover:bg-gold/10"
+              className="group flex items-center justify-center gap-2 w-full py-2.5 border border-gold/40 text-gold font-montserrat text-[10px] tracking-[0.2em] uppercase transition-all duration-300 hover:border-gold/70 hover:bg-gold/12 hover:shadow-[0_0_0_1px_rgba(201,164,92,0.14),0_0_12px_rgba(201,164,92,0.08)]"
             >
               <MapPin size={13} />
               {showAddress ? "SEMBUNYIKAN ALAMAT" : "LIHAT ALAMAT"}

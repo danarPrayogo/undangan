@@ -23,8 +23,8 @@ export const weddingData = {
   couplePhoto: "/images/couple.png",
 
   event: {
-    date: "2026-09-24", // YYYY-MM-DD
-    dateDisplay: "Minggu, 24 September 2026",
+    date: "2026-11-24", // YYYY-MM-DD
+    dateDisplay: "Minggu, 24 November 2026",
     akad: {
       time: "08:00",
       timeDisplay: "08.00 WIB - Selesai",
@@ -35,7 +35,7 @@ export const weddingData = {
       timeDisplay: "10.00 WIB - Selesai",
       label: "Resepsi",
     },
-    countdownTarget: "2026-09-24T08:00:00+07:00",
+    countdownTarget: "2026-11-24T08:00:00+07:00",
     venue: "Gedung Serba Guna Harmoni",
     address: "Jl. Mawar No. 12, Kecamatan Sukajadi,\nKota Bandung, Jawa Barat",
     addressOneLine: "Jl. Mawar No. 12, Kecamatan Sukajadi, Kota Bandung, Jawa Barat",
@@ -82,7 +82,7 @@ export const weddingData = {
         "Setelah tiga tahun pertemanan yang indah, kami memutuskan untuk melangkah lebih jauh.",
     },
     {
-      year: "2025",
+      year: "2026",
       title: "Lamaran",
       description:
         "Dengan restu kedua keluarga, langkah menuju jenjang pernikahan dimulai dengan penuh suka cita.",
@@ -113,7 +113,7 @@ export const weddingData = {
   seo: {
     title: "Sigit & Wike — Undangan Pernikahan",
     description:
-      "Undangan pernikahan Sigit & Wike. Minggu, 24 September 2026 di Gedung Serba Guna Harmoni, Bandung.",
+      "Undangan pernikahan Sigit & Wike. Minggu, 24 november 2026 di Gedung Serba Guna Harmoni, Bandung.",
     ogImage: "/images/og-image.png",
     url: "https://undangan-irfan-meysa.vercel.app",
   },

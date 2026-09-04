@@ -200,9 +200,9 @@ export default function RsvpSection() {
                   id="btn-submit-rsvp"
                   type="submit"
                   disabled={loading}
-                  className="group relative w-full py-3.5 border border-gold/60 text-gold font-montserrat text-xs tracking-[0.2em] uppercase overflow-hidden transition-all duration-300 hover:text-darkwine disabled:opacity-50"
+                  className="group relative w-full py-3.5 border border-gold/60 text-gold font-montserrat text-xs tracking-[0.2em] uppercase overflow-hidden transition-all duration-300 hover:border-gold/80 hover:shadow-[0_0_0_1px_rgba(201,164,92,0.16),0_0_14px_rgba(201,164,92,0.10)] disabled:opacity-50"
                 >
-                  <span className="absolute inset-0 bg-gold transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left" />
+                  <span className="absolute inset-0 bg-gold/12 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left pointer-events-none" />
                   <span className="relative flex items-center justify-center gap-2">
                     {loading ? (
                       <>

@@ -10,8 +10,8 @@ import { weddingData } from "@/data/wedding";
 
 function CountdownBox({ value, label }: { value: number; label: string }) {
   return (
-    <div className="flex flex-col items-center">
-      <GoldBorderCard className="w-14 h-14 sm:w-16 sm:h-16 md:w-20 md:h-20 flex items-center justify-center mb-2">
+    <div className="flex flex-col items-center group">
+      <GoldBorderCard className="w-14 h-14 sm:w-16 sm:h-16 md:w-20 md:h-20 flex items-center justify-center mb-2 transition-transform duration-300 group-hover:scale-105">
         <span className="font-cormorant text-2xl sm:text-3xl md:text-4xl text-gold font-light tabular-nums">
           {padZero(value)}
         </span>

@@ -29,6 +29,44 @@ export default function Navigation() {
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
 
+  useEffect(() => {
+    const sectionIds = navItems.map((item) => item.id);
+    const sections = sectionIds
+      .map((id) => document.getElementById(id))
+      .filter((element): element is HTMLElement => element !== null);
+
+    if (sections.length === 0) {
+      return;
+    }
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        const visibleEntries = entries
+          .filter((entry) => entry.isIntersecting)
+          .sort((first, second) => {
+            if (second.intersectionRatio !== first.intersectionRatio) {
+              return second.intersectionRatio - first.intersectionRatio;
+            }
+
+            return sectionIds.indexOf(first.target.id) - sectionIds.indexOf(second.target.id);
+          });
+
+        if (visibleEntries.length > 0) {
+          setActive(visibleEntries[0].target.id);
+        }
+      },
+      {
+        root: null,
+        rootMargin: "-20% 0px -55% 0px",
+        threshold: [0.15, 0.3, 0.5, 0.7],
+      }
+    );
+
+    sections.forEach((section) => observer.observe(section));
+
+    return () => observer.disconnect();
+  }, []);
+
   const scrollTo = (id: string) => {
     const el = document.getElementById(id);
     if (el) {
@@ -57,8 +95,10 @@ export default function Navigation() {
           >
             {link.label}
             <span
-              className={`absolute -bottom-1 left-0 right-0 h-px bg-gold transition-transform duration-300 origin-left ${
-                active === link.id ? "scale-x-100" : "scale-x-0 group-hover:scale-x-100"
+              className={`absolute -bottom-1 left-0 right-0 h-px bg-gold transition-all duration-300 origin-left ${
+                active === link.id
+                  ? "scale-x-100 opacity-100 shadow-[0_0_8px_rgba(201,164,92,0.35)]"
+                  : "scale-x-0 opacity-70 group-hover:scale-x-100 group-hover:opacity-100"
               }`}
             />
           </button>

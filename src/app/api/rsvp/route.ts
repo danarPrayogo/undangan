@@ -26,6 +26,7 @@ export async function POST(request: Request) {
         : "Masih Ragu";
 
     const payload = {
+      type: "rsvp",
       timestamp: new Date().toLocaleString("id-ID", {
         timeZone: "Asia/Jakarta",
         dateStyle: "full",
@@ -45,12 +46,16 @@ export async function POST(request: Request) {
           "Content-Type": "application/json",
         },
         body: JSON.stringify(payload),
-        // Follow redirects as Google Apps Script redirects POST to response
         redirect: "follow",
       });
 
-      if (!response.ok) {
-        console.error("Google Script error status:", response.status);
+      const scriptResult = await response.json().catch(() => null);
+
+      if (!response.ok || scriptResult?.result !== "success") {
+        throw new Error(
+          scriptResult?.error ||
+            `Google Script gagal menyimpan RSVP (status: ${response.status})`
+        );
       }
     } else {
       console.log("RSVP Submission received locally (Google Script URL not configured):", payload);
@@ -61,10 +66,12 @@ export async function POST(request: Request) {
       message: "Konfirmasi kehadiran berhasil disimpan",
       data: payload,
     });
-  } catch (error: any) {
+  } catch (error: unknown) {
+    const errorMessage =
+      error instanceof Error ? error.message : "Gagal menyimpan konfirmasi";
     console.error("RSVP API Route error:", error);
     return NextResponse.json(
-      { success: false, error: error.message || "Gagal menyimpan konfirmasi" },
+      { success: false, error: errorMessage },
       { status: 500 }
     );
   }

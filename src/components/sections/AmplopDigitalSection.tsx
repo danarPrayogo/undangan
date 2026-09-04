@@ -65,7 +65,7 @@ function AccountCard({
         className={`group flex items-center justify-center gap-2 w-full py-2.5 border text-xs font-montserrat tracking-[0.2em] uppercase transition-all duration-300 ${
           copied
             ? "border-emerald-500/50 text-emerald-400"
-            : "border-gold/40 text-gold hover:border-gold hover:bg-gold/10"
+            : "border-gold/40 text-gold hover:border-gold/70 hover:bg-gold/12 hover:shadow-[0_0_0_1px_rgba(201,164,92,0.14),0_0_12px_rgba(201,164,92,0.08)]"
         }`}
       >
         {copied ? (

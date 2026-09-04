@@ -55,7 +55,7 @@ export default function OpeningCover({ onOpen }: OpeningCoverProps) {
         <div className="flex items-center gap-3 mb-6">
           <div className="h-px w-10 bg-gold opacity-50" />
           <p className="font-cormorant text-xs tracking-[0.25em] text-gold/80 italic">
-            — NGUNDUH MANTU —
+            — UNDANGAN PERNIKAHAN —
           </p>
           <div className="h-px w-10 bg-gold opacity-50" />
         </div>
@@ -95,9 +95,9 @@ export default function OpeningCover({ onOpen }: OpeningCoverProps) {
         <button
           id="btn-open-undangan"
           onClick={handleOpen}
-          className="group relative px-8 py-3 border border-gold/60 text-gold font-montserrat text-xs tracking-[0.25em] uppercase overflow-hidden transition-all duration-500 hover:text-darkwine"
+          className="group relative px-8 py-3 border border-gold/60 text-gold font-montserrat text-xs tracking-[0.25em] uppercase overflow-hidden transition-all duration-500 hover:border-gold/80 hover:shadow-[0_0_0_1px_rgba(201,164,92,0.18),0_0_16px_rgba(201,164,92,0.12)]"
         >
-          <span className="absolute inset-0 bg-gold transform -translate-x-full group-hover:translate-x-0 transition-transform duration-500" />
+          <span className="absolute inset-0 bg-gold/12 opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none" />
           <span className="relative flex items-center gap-2">
             <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
               <path d="M8 3H5a2 2 0 0 0-2 2v3m18 0V5a2 2 0 0 0-2-2h-3m0 18h3a2 2 0 0 0 2-2v-3M3 16v3a2 2 0 0 0 2 2h3" />
