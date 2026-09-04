@@ -77,11 +77,11 @@ export default function OpeningCover({ onOpen }: OpeningCoverProps) {
 
         {/* Names */}
         <h1 className="font-cormorant text-5xl md:text-6xl text-cream font-light leading-tight mb-1">
-          Irfan
+          {weddingData.groom.nickname}
         </h1>
         <div className="font-cormorant text-3xl text-gold italic mb-1">&</div>
         <h1 className="font-cormorant text-5xl md:text-6xl text-cream font-light leading-tight mb-6">
-          Meysa
+          {weddingData.bride.nickname}
         </h1>
 
         {/* Invitation text */}

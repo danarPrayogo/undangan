@@ -49,14 +49,14 @@ export const weddingData = {
       bank: "BCA",
       accountNumber: "1234 5678 9012 3456",
       accountNumberRaw: "1234567890123456",
-      accountName: "Irfan Maulana",
+      accountName: "Sigit",
       logo: "BCA",
     },
     {
       bank: "Bank Mandiri",
       accountNumber: "1234 5678 9012 345",
       accountNumberRaw: "12345678901235",
-      accountName: "Meysa Putri",
+      accountName: "Wike",
       logo: "MANDIRI",
     },
   ],
@@ -115,7 +115,7 @@ export const weddingData = {
   seo: {
     title: "Sigit & Wike — Undangan Pernikahan",
     description:
-      "Undangan pernikahan Irfan Maulana & Meysa Putri. Minggu, 24 Mei 2026 di Gedung Serba Guna Harmoni, Bandung.",
+      "Undangan pernikahan Sigit & Wike. Minggu, 24 September 2026 di Gedung Serba Guna Harmoni, Bandung.",
     ogImage: "/images/og-image.jpg",
     url: "https://undangan-irfan-meysa.vercel.app",
   },
