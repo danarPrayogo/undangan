@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import FloralOrnament from "@/components/ornaments/FloralOrnament";
 import BatikPattern from "@/components/ornaments/BatikPattern";
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
@@ -86,6 +87,20 @@ export default function ClosingSection() {
         <p className="font-montserrat text-[9px] tracking-[0.3em] text-cream/30 mt-8 uppercase">
           {weddingData.event.dateDisplay}
         </p>
+
+        {/* License / credit */}
+        <div className="mt-10 flex justify-center border-t border-gold/10 pt-4">
+          <Image
+            src="/images/logofix.png"
+            alt="Infinity Digital Invitation"
+            width={104}
+            height={104}
+            className="h-[104px] w-[104px] object-contain"
+            quality={100}
+            unoptimized
+            draggable={false}
+          />
+        </div>
       </div>
     </section>
   );
