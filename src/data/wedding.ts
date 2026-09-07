@@ -5,18 +5,18 @@
 
 export const weddingData = {
   groom: {
-    name: "Sigit",
+    name: "Sigit Aryanto",
     nickname: "Sigit",
-    instagram: "@sigit.sptr",
-    parents: "Putra dari Bapak H. Suharto & Ibu Hj. Siti Rahayu",
+    instagram: "@sigit_aryanto",
+    parents: "Putra ke-2 dari Bapak Pendi & Ibu Patonah",
     photo: "/images/groom.png",
   },
 
   bride: {
-    name: "Wike",
+    name: "Wike Widhyawati, S.pd",
     nickname: "Wike",
-    instagram: "@wike.wulandari",
-    parents: "Putri dari Bapak H. Bambang Sudarsono & Ibu Hj. Endah Lestari",
+    instagram: "@wike_widhyawati",
+    parents: "Putri ke-3 dari Bapak Ngateman & Ibu Sriyatun",
     photo: "/images/bride.png",
   },
 
@@ -36,13 +36,12 @@ export const weddingData = {
       label: "Resepsi",
     },
     countdownTarget: "2026-11-24T08:00:00+07:00",
-    venue: "Gedung Serba Guna Harmoni",
-    address: "Jl. Mawar No. 12, Kecamatan Sukajadi,\nKota Bandung, Jawa Barat",
-    addressOneLine: "Jl. Mawar No. 12, Kecamatan Sukajadi, Kota Bandung, Jawa Barat",
-    mapsUrl: "https://maps.google.com/?q=Gedung+Serba+Guna+Harmoni+Bandung",
-    mapsEmbed:
-      "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3960.8!2d107.6!3d-6.9!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNsKwNTQnMDAuMCJTIDEwN8KwMzYnMDAuMCJF!5e0!3m2!1sen!2sid!4v1620000000000!5m2!1sen!2sid",
-  },
+    venue: "Depan SDN 2 Purajaya",
+    address: "Jl. Kebun Tebu, Pura Jaya, Kec. Sumber Jaya, Kabupaten Lampung Barat",
+    addressOneLine: "Jl. Kebun Tebu, Pura Jaya, Kec. Sumber Jaya, Kabupaten Lampung Barat",
+    mapsUrl: "https://maps.app.goo.gl/Xe7oiv5daspTN2ek7",
+    mapsEmbed:"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d305.6443282766379!2d104.52704509708843!3d-5.047441317429535!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e47659ba7bc2b49%3A0x835925175ec27da9!2sSDN%202%20PURAJAYA!5e1!3m2!1sid!2sid!4v1788787306301!5m2!1sid!2sid"  },
+
 
   bankAccounts: [
     {
@@ -63,7 +62,7 @@ export const weddingData = {
 
   giftAddress: {
     recipientName: "Sigit & Wike",
-    address: "Jl. Melati No. 5, RT 02/RW 03,\nKelurahan Sukamaju, Kecamatan Sukajadi,\nKota Bandung, Jawa Barat 40162",
+    address: "Jl. Kebun Tebu, Pura Jaya, Kec. Sumber Jaya, Kabupaten Lampung Barat",
     phone: "0812-3456-7890",
     note: "Mohon konfirmasi pengiriman via WhatsApp terlebih dahulu.",
   },

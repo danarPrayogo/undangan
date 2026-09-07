@@ -54,7 +54,7 @@ function MempelaiCard({
         {role}
       </p>
       {/* Name */}
-      <h3 className="font-cormorant text-3xl md:text-4xl text-cream font-light tracking-wide mb-3">
+      <h3 className="font-cormorant text-3xl md:text-4xl text-cream font-light tracking-wide mb-3 text-center mx-auto w-full">
         {name}
       </h3>
       {/* Divider */}
@@ -64,7 +64,11 @@ function MempelaiCard({
         <div className="h-px w-8 bg-gold/40" />
       </div>
       {/* Parents */}
-      <p className="font-montserrat text-[11px] text-cream/60 leading-relaxed max-w-[200px]">
+      <p
+        className={`font-montserrat text-[11px] text-cream/60 leading-relaxed w-full max-w-[210px] min-h-[2.75rem] text-center mx-auto ${
+          role === "Mempelai Pria" ? "translate-y-9" : ""
+        }`}
+      >
         {parents}
       </p>
     </div>
