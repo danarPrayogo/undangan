@@ -7,9 +7,10 @@ import { weddingData } from "@/data/wedding";
 
 interface OpeningCoverProps {
   onOpen: () => void;
+  guestName: string;
 }
 
-export default function OpeningCover({ onOpen }: OpeningCoverProps) {
+export default function OpeningCover({ onOpen, guestName }: OpeningCoverProps) {
   const handleOpen = () => {
     onOpen();
   };
@@ -84,6 +85,13 @@ export default function OpeningCover({ onOpen }: OpeningCoverProps) {
         <h1 className="font-cormorant text-5xl md:text-6xl text-cream font-light leading-tight mb-6">
           {weddingData.bride.nickname}
         </h1>
+
+        <p className="font-montserrat text-[10px] tracking-[0.35em] text-gold/80 uppercase mb-2">
+          Yth. Bapak/Ibu/Saudara/i
+        </p>
+        <p className="font-cormorant text-xl md:text-2xl text-cream font-light leading-tight mb-6">
+          {guestName}
+        </p>
 
         {/* Invitation text */}
         <p className="font-montserrat text-[10px] leading-relaxed text-cream/70 text-center mb-8 tracking-wide">
