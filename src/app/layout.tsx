@@ -22,6 +22,11 @@ export const metadata: Metadata = {
   title: weddingData.seo.title,
   description: weddingData.seo.description,
   metadataBase: new URL(weddingData.seo.url),
+  icons: {
+    icon: "/icon.svg",
+    shortcut: "/icon.svg",
+    apple: "/icon.svg",
+  },
   openGraph: {
     title: weddingData.seo.title,
     description: weddingData.seo.description,
