@@ -23,7 +23,7 @@ export const weddingData = {
   couplePhoto: "/images/couple.png",
 
   event: {
-    date: "2026-11-24", // YYYY-MM-DD
+    date: "2026-11-15", // YYYY-MM-DD
     dateDisplay: "Minggu, 15 November 2026",
     akad: {
       time: "08:00",
@@ -35,7 +35,7 @@ export const weddingData = {
       timeDisplay: "10.00 WIB - Selesai",
       label: "Resepsi",
     },
-    countdownTarget: "2026-11-24T08:00:00+07:00",
+    countdownTarget: "2026-11-15T08:00:00+07:00",
     venue: "Depan SDN 2 Purajaya",
     address: "Jl. Kebun Tebu, Pura Jaya, Kec. Sumber Jaya, Kabupaten Lampung Barat",
     addressOneLine: "Jl. Kebun Tebu, Pura Jaya, Kec. Sumber Jaya, Kabupaten Lampung Barat",
