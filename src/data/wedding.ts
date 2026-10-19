@@ -36,9 +36,9 @@ export const weddingData = {
       label: "Resepsi",
     },
     countdownTarget: "2026-11-15T08:00:00+07:00",
-    venue: "Depan SDN 2 Purajaya",
-    address: "Jl. Kebun Tebu, Pura Jaya, Kec. Sumber Jaya, Kabupaten Lampung Barat",
-    addressOneLine: "Jl. Kebun Tebu, Pura Jaya, Kec. Sumber Jaya, Kabupaten Lampung Barat",
+    venue: "Gg. Ciptasari 2",
+    address: "Gg. Ciptasari 2, Purajaya, kec.kebun tebu, kab. Lampung barat",
+    addressOneLine: "Gg. Ciptasari 2, Purajaya, kec.kebun tebu, kab. Lampung barat",
     mapsUrl: "https://maps.app.goo.gl/Xe7oiv5daspTN2ek7",
     mapsEmbed: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d305.6443282766379!2d104.52704509708843!3d-5.047441317429535!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e47659ba7bc2b49%3A0x835925175ec27da9!2sSDN%202%20PURAJAYA!5e1!3m2!1sid!2sid!4v1788787306301!5m2!1sid!2sid"
   },

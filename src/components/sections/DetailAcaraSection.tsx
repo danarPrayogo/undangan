@@ -86,8 +86,8 @@ export default function DetailAcaraSection() {
 
         {/* Dress code note */}
         <div className="mt-8 text-center">
-          <p className="font-montserrat text-[10px] text-cream/40 tracking-wider">
-            DRESS CODE: FORMAL — MAROON / GOLD / CREAM
+          <p className="font-montserrat text-[10px] text-cream/40 tracking-wider">  
+          
           </p>
         </div>
       </div>
